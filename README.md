@@ -7,7 +7,7 @@ Esse projeto é utilizado para ensinar amigos a aprender react com uma fake api,
 
 - [x] React Hooks
 - [x] Utilização do Axios
-- [x] Modulação de componentes
+- [x] Modularização de componentes
 - [x] Utilização de Json Server
 - [x] Material UI
 - [x] Styled Components
