@@ -1,0 +1,97 @@
+{
+  "posts": [
+    {
+      "title": "asdasd",
+      "description": "asdasdasdasd",
+      "id": 1
+    },
+    {
+      "title": "asdasdasdasd",
+      "description": "asdasdasd",
+      "id": 2
+    },
+    {
+      "title": "teste",
+      "description": "teste",
+      "id": 3
+    },
+    {
+      "title": "123",
+      "description": "123",
+      "id": 4
+    },
+    {
+      "title": "44",
+      "description": "44",
+      "id": 5
+    },
+    {
+      "title": "1",
+      "description": "1",
+      "id": 8
+    },
+    {
+      "title": "teste 1",
+      "description": "teste 1",
+      "id": 9
+    },
+    {
+      "title": "tt",
+      "description": "tt",
+      "id": 10
+    }
+  ],
+  "comments": [],
+  "users": [
+    {
+      "email": "gustavo2@sequor.com",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "email": "teste",
+      "password": "teste",
+      "id": 2
+    },
+    {
+      "title": "Teste",
+      "description": "Teste",
+      "id": 3
+    },
+    {
+      "title": "asdasdasd",
+      "description": "asdasdasdasd",
+      "id": 4
+    },
+    {
+      "email": "ee",
+      "password": "ee",
+      "id": 5
+    },
+    {
+      "email": "qweqwe",
+      "password": "qweqweqwe",
+      "id": 6
+    },
+    {
+      "email": "qweqwetet",
+      "password": "test",
+      "id": 7
+    },
+    {
+      "email": "asdasdasd",
+      "password": "asdasdasd",
+      "id": 8
+    },
+    {
+      "email": "dasdasd",
+      "password": "asdasdasd",
+      "id": 9
+    },
+    {
+      "email": "teste",
+      "password": "teste",
+      "id": 10
+    }
+  ]
+}
