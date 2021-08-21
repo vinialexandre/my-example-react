@@ -1,5 +1,7 @@
 # Rede Social com React e Json Server
 
+![App Screenshot](./public/print-login.JPG)
+
 Este projeto tem como objetivo mostrar como utilizar o Json Server com o React para criar um aplicativo de rede social simples.
 Esse projeto é utilizado para ensinar amigos a aprender react com uma fake api, segue abaixo as técnicas abordadas:
 
@@ -40,5 +42,10 @@ Obs: o json-server irá rodar na porta `http://localhost:3000`
 
 Obs: o react irá rodar na porta `http://localhost:3001`
 
-Fim.
+#### Screenshots 
 
+![App Screenshot](./public/print-home.JPG)
+
+![App Screenshot](./public/print-delete.JPG)
+
+![App Screenshot](./public/print-edit.JPG)
