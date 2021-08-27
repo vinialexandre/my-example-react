@@ -7,11 +7,11 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import Slide from '@material-ui/core/Slide';
 import { TextField } from '@material-ui/core';
 
-const Transition = forwardRef(function Transition(props, ref) {
+const Transition: any = forwardRef(function Transition(props: any, ref: any) {
     return <Slide direction="up" ref={ref} {...props} />;
   });
 
-export function DialogEdit({ open, handleClose, serviceEditPost, post, setSelectPost, setUpdateList, updateList }) {
+export function DialogEdit({ open, handleClose, serviceEditPost, post, setSelectPost, setUpdateList, updateList }: any) {
 
     return  <Dialog
                 open={open}
@@ -61,7 +61,7 @@ export function DialogEdit({ open, handleClose, serviceEditPost, post, setSelect
                         Cancelar
                     </Button>
                     <Button onClick={() => {
-                        serviceEditPost(post).then((response) => {
+                        serviceEditPost(post).then((response: any) => {
                             if(response){
                                 handleClose();
                                 setUpdateList(!updateList)

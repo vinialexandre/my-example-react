@@ -7,12 +7,21 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Slide from '@material-ui/core/Slide';
 
-const Transition = forwardRef(function Transition(props, ref) {
+const Transition: any = forwardRef(function Transition(props: any, ref: any) {
     return <Slide direction="up" ref={ref} {...props} />;
   });
 
-export function DialogDelete({ open, handleClose, serviceDeletePosts, id, setUpdateList, updateList }) {
 
+type InputProps = {
+    open: boolean;
+    handleClose: () => void;
+    serviceDeletePosts: (id: number) => Promise<boolean>;
+    id: number;
+    setUpdateList: React.Dispatch<React.SetStateAction<boolean>>,
+    updateList: boolean;
+}
+
+export function DialogDelete({ open, handleClose, serviceDeletePosts, id, setUpdateList, updateList }: InputProps): JSX.Element {
     return  <Dialog
                 open={open}
                 TransitionComponent={Transition}
@@ -32,13 +41,13 @@ export function DialogDelete({ open, handleClose, serviceDeletePosts, id, setUpd
                         Cancelar
                     </Button>
                     <Button variant="contained" color="primary" onClick={() => {
-                        serviceDeletePosts(id).then((response) => {
+                        serviceDeletePosts(id).then((response: any) => {
                             if(response){
                                 handleClose();
                                 setUpdateList(!updateList)
                             }
                         });
-                    }} color="primary">
+                    }}>
                         Confirmar
                     </Button>
                 </DialogActions>

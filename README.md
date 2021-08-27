@@ -3,7 +3,7 @@
 ![App Screenshot](./public/print-login.JPG)
 
 Este projeto tem como objetivo mostrar como utilizar o Json Server com o React para criar um aplicativo de rede social simples.
-Esse projeto é utilizado para ensinar amigos a aprender react com uma fake api, segue abaixo as técnicas abordadas:
+Esse projeto é utilizado para ensinar iniciantes a aprender react com uma fake api, segue abaixo as técnicas abordadas:
 
 - [x] React Hooks
 - [x] Utilização do Axios
@@ -27,7 +27,7 @@ Ainda serão abordadas as seguintes técnicas:
 
 ### Pré-requisitos para Rodar
 
-#### 1) Primeiro Rodar o Json Server:
+#### 1) Rodar o Json Server:
 
 Para rodar o projeto, você precisa primeiramente acessar a pasta `api-fake`
 e rodar o seguinte comando: 
@@ -36,7 +36,7 @@ e rodar o seguinte comando:
 Obs: o json-server irá rodar na porta `http://localhost:3000`
 
 
-#### 2) Segundo Rodar o projeto React:
+#### 2) Rodar o projeto React:
 
 #### `npm start`
 

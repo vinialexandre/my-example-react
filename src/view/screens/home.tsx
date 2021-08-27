@@ -13,13 +13,14 @@ import Container from '@material-ui/core/Container';
 import { Copyright, FormPost, DialogDelete, DialogEdit } from '../../components';
 import { serviceGetPosts, serviceDeletePosts, serviceEditPost } from '../../services'
 import { useHomeStyles } from '../styles';
+import { Post } from '../../types/index';
 
 export function Home() {
   const classes = useHomeStyles();
 
-  const [posts, setPosts] = useState();
+  const [posts, setPosts] = useState<Post[]>([]);
   const [updateList, setUpdateList] = useState(false);
-  const [selectPost, setSelectPost] = useState({id: '', title: '', description: ''});
+  const [selectPost, setSelectPost] = useState({id: 0, title: '', description: ''});
 
   const [openDelete, setOpenDelete] = useState(false);
   const handleClickOpenDelete = () => {
@@ -40,9 +41,9 @@ export function Home() {
 
   useEffect(() => {// passo uma função/script para ser executado antes do render
     serviceGetPosts()
-      .then(data => {
-          // implementar setPost passando o valor data || setar no estado o valor da promessa
-          setPosts(data);
+      .then((posts: Post[]) => {
+          // implementar setPost passando o valor posts || setar no estado o valor da promessa
+          setPosts(posts);
       })      
   }, [updateList]) // o momento que eu quero que o useEffect seja executado
 
@@ -65,7 +66,7 @@ export function Home() {
           </Grid>
           {/* End hero unit */}
           <Grid container spacing={4}>
-            {posts && posts.map((post) => (
+            {posts && posts.map((post: any) => (
               <>
                 <Grid item key={post.id} xs={12} sm={12} md={12}>
                   <Card className={classes.card}>
